@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uom.chathus.doorlock.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgStatus"
+        android:layout_width="302dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="61dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUnlock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/unlock_button" />
+
+    <ImageButton
+        android:id="@+id/btnUnlock"
+        android:layout_width="183dp"
+        android:layout_height="178dp"
+        android:layout_marginBottom="167dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="34dp"
+        android:onClick="unlock"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgStatus"
+        app:srcCompat="@drawable/unlock_button" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="311dp"
+        android:layout_marginTop="327dp"
+        android:onClick="addPeople"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgStatus"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</android.support.constraint.ConstraintLayout>
